@@ -22,9 +22,9 @@ function ShoppingCart({
 					)}
 					{products.map((product) => (
 						<div className="cart-product" key={product.id}>
-							<img	src={	product.image		}	alt={product.name}	/>
+							<img	src={	product.image		}	alt={product.title}	/>
 							<div className="product-info">
-								<h3>{product.name}	</h3>
+								<h3>{product.title}	</h3>
 								<span className="product-price">	{product.price *	product.count}	$	</span>
 							</div>
 							<select	className="count"	value={	product.count	}
